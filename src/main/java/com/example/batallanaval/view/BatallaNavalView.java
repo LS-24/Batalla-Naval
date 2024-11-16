@@ -14,6 +14,10 @@ public class BatallaNavalView extends Stage {
 
     private BatallaNavalController controller;
 
+    /**
+     *
+     * @throws IOException
+     */
     public BatallaNavalView() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/batallanaval/batallaNavalview.fxml"));
         Parent root = loader.load();
@@ -25,6 +29,11 @@ public class BatallaNavalView extends Stage {
         show();
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     public static BatallaNavalView getInstance() throws IOException{
         if (batallaNavalViewHolder.INSTANCE == null){
             return batallaNavalViewHolder.INSTANCE = new BatallaNavalView();
@@ -33,6 +42,9 @@ public class BatallaNavalView extends Stage {
         }
     }
 
+    /**
+     *
+     */
     private static class batallaNavalViewHolder{
         private static BatallaNavalView INSTANCE;
     }

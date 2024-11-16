@@ -8,13 +8,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.batallanaval.controller.MainController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.batallanaval.controller.MainController">
    <children>
       <Label text="Batalla Naval">
-         <font>
-            <Font nickName="System Bold" size="72.0" />
-         </font>
          <textFill>
             <LinearGradient endX="0.5071090047393365" endY="0.3080568720379147" startX="0.5071090047393365" startY="0.6445497630331753">
                <stops>
@@ -36,6 +32,9 @@
                </stops>
             </LinearGradient>
          </textFill>
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
       </Label>
       <Button fx:id="iniciarJuegoButton" mnemonicParsing="false" onMouseClicked="#oniniciarjuegoMouseClicked" text="Iniciar Nuevo Juego">
          <font>
